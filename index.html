@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worktune.ai - Inteligentné meranie efektivity zamestnancov</title>
+    <meta name="description" content="Worktune.ai využíva umelú inteligenciu na meranie a optimalizáciu produktivity vášho tímu. Získajte prehľad o výkonnosti v reálnom čase.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="10" fill="url(#gradient)"/>
+                    <path d="M12 20L17 25L28 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="0" y1="0" x2="40" y2="40">
+                            <stop stop-color="#6366F1"/>
+                            <stop offset="1" stop-color="#8B5CF6"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>Worktune.ai</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Funkcie</a>
+                <a href="#how-it-works">Ako to funguje</a>
+                <a href="#pricing">Cenník</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Prihlásiť sa</a>
+                <a href="#" class="btn btn-primary">Vyskúšať zadarmo</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Nová generácia HR analytiky
+                </div>
+                <h1 class="hero-title">
+                    Merajte efektivitu <br>
+                    <span class="gradient-text">inteligentne</span>
+                </h1>
+                <p class="hero-description">
+                    Worktune.ai využíva umelú inteligenciu na analýzu produktivity vášho tímu. 
+                    Získajte detailné prehľady, identifikujte príležitosti na zlepšenie a 
+                    optimalizujte pracovné procesy v reálnom čase.
+                </p>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary btn-large">
+                        Začať zadarmo
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="btn btn-outline btn-large">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 7L13 10L8 13V7Z" fill="currentColor"/>
+                        </svg>
+                        Pozrieť demo
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Firiem nám dôveruje</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Spokojnosť zákazníkov</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">35%</span>
+                        <span class="stat-label">Zvýšenie produktivity</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="dashboard-preview">
+                    <div class="dashboard-header">
+                        <div class="dashboard-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="dashboard-title">Worktune Dashboard</span>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="dashboard-sidebar">
+                            <div class="sidebar-item active"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                        </div>
+                        <div class="dashboard-main">
+                            <div class="chart-card">
+                                <div class="chart-header"></div>
+                                <div class="chart-bars">
+                                    <div class="bar" style="height: 60%"></div>
+                                    <div class="bar" style="height: 80%"></div>
+                                    <div class="bar" style="height: 45%"></div>
+                                    <div class="bar" style="height: 90%"></div>
+                                    <div class="bar" style="height: 70%"></div>
+                                    <div class="bar" style="height: 85%"></div>
+                                    <div class="bar" style="height: 55%"></div>
+                                </div>
+                            </div>
+                            <div class="stats-row">
+                                <div class="mini-stat">
+                                    <div class="mini-stat-icon green"></div>
+                                    <div class="mini-stat-content">
+                                        <div class="mini-stat-value"></div>
+                                        <div class="mini-stat-label"></div>
+                                    </div>
+                                </div>
+                                <div class="mini-stat">
+                                    <div class="mini-stat-icon blue"></div>
+                                    <div class="mini-stat-content">
+                                        <div class="mini-stat-value"></div>
+                                        <div class="mini-stat-label"></div>
+                                    </div>
+                                </div>
+                                <div class="mini-stat">
+                                    <div class="mini-stat-icon purple"></div>
+                                    <div class="mini-stat-content">
+                                        <div class="mini-stat-value"></div>
+                                        <div class="mini-stat-label"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-gradient"></div>
+    </section>
+
+    <!-- Logos Section -->
+    <section class="logos-section">
+        <div class="container">
+            <p class="logos-title">Dôverujú nám vedúce spoločnosti</p>
+            <div class="logos-grid">
+                <div class="logo-item">TechCorp</div>
+                <div class="logo-item">Innovate</div>
+                <div class="logo-item">DataFlow</div>
+                <div class="logo-item">CloudSync</div>
+                <div class="logo-item">NextGen</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Funkcie</span>
+                <h2 class="section-title">Všetko čo potrebujete pre <br><span class="gradient-text">efektívne riadenie</span></h2>
+                <p class="section-description">
+                    Komplexné nástroje pre meranie, analýzu a optimalizáciu produktivity vášho tímu
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon purple">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M14 3.5V24.5M14 3.5L7 10.5M14 3.5L21 10.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Automatické sledovanie</h3>
+                    <p class="feature-description">
+                        AI automaticky sleduje pracovné aktivity a kategorizuje čas strávený na jednotlivých úlohách bez manuálneho zadávania.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon blue">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <rect x="3.5" y="5.5" width="21" height="17" rx="2" stroke="currentColor" stroke-width="2.5"/>
+                            <path d="M3.5 11.5H24.5" stroke="currentColor" stroke-width="2.5"/>
+                            <path d="M10.5 5.5V11.5" stroke="currentColor" stroke-width="2.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Prehľadné dashboardy</h3>
+                    <p class="feature-description">
+                        Intuitívne vizualizácie a reporty, ktoré vám pomôžu rýchlo pochopiť trendy a identifikovať oblasti na zlepšenie.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <circle cx="14" cy="14" r="10.5" stroke="currentColor" stroke-width="2.5"/>
+                            <path d="M14 8V14L18 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Analýza v reálnom čase</h3>
+                    <p class="feature-description">
+                        Sledujte produktivitu tímu v reálnom čase a reagujte na zmeny okamžite s automatickými upozorneniami.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon orange">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M14 3.5C8.2 3.5 3.5 8.2 3.5 14S8.2 24.5 14 24.5 24.5 19.8 24.5 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M14 8.5V14L17.5 17.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 3.5V10.5H24.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Inteligentné odporúčania</h3>
+                    <p class="feature-description">
+                        AI analyzuje vzorce a poskytuje personalizované odporúčania pre zlepšenie efektivity jednotlivcov aj tímov.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon pink">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M7 14H21M7 8.5H21M7 19.5H14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Flexibilné reporty</h3>
+                    <p class="feature-description">
+                        Vytvárajte vlastné reporty a exportujte dáta v rôznych formátoch pre ďalšiu analýzu alebo prezentácie.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon teal">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M10.5 14C10.5 12.067 12.067 10.5 14 10.5C15.933 10.5 17.5 12.067 17.5 14C17.5 15.933 15.933 17.5 14 17.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M14 3.5V7M14 21V24.5M3.5 14H7M21 14H24.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Integrácie</h3>
+                    <p class="feature-description">
+                        Bezproblémová integrácia s populárnymi nástrojmi ako Slack, Microsoft Teams, Jira, Asana a ďalšími.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Ako to funguje</span>
+                <h2 class="section-title">Začnite za <span class="gradient-text">3 jednoduché kroky</span></h2>
+                <p class="section-description">
+                    Nastavenie trvá len niekoľko minút a výsledky uvidíte okamžite
+                </p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Pripojte svoj tím</h3>
+                    <p class="step-description">
+                        Pozvite členov tímu emailom alebo prepojte existujúce HR systémy. Integrácia s Active Directory je tiež možná.
+                    </p>
+                </div>
+                <div class="step-connector">
+                    <svg width="60" height="24" viewBox="0 0 60 24" fill="none">
+                        <path d="M0 12H55M55 12L45 2M55 12L45 22" stroke="url(#arrow-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="arrow-gradient" x1="0" y1="12" x2="55" y2="12">
+                                <stop stop-color="#6366F1"/>
+                                <stop offset="1" stop-color="#8B5CF6"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">Nastavte metriky</h3>
+                    <p class="step-description">
+                        Vyberte si z predpripravených KPI alebo vytvorte vlastné metriky presne podľa potrieb vašej organizácie.
+                    </p>
+                </div>
+                <div class="step-connector">
+                    <svg width="60" height="24" viewBox="0 0 60 24" fill="none">
+                        <path d="M0 12H55M55 12L45 2M55 12L45 22" stroke="url(#arrow-gradient2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="arrow-gradient2" x1="0" y1="12" x2="55" y2="12">
+                                <stop stop-color="#8B5CF6"/>
+                                <stop offset="1" stop-color="#A855F7"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Sledujte výsledky</h3>
+                    <p class="step-description">
+                        Získajte okamžitý prístup k dashboardom s analytickými prehľadmi a AI odporúčaniami pre optimalizáciu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Referencie</span>
+                <h2 class="section-title">Čo hovoria naši <span class="gradient-text">zákazníci</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1L12.39 6.36L18.18 7.27L14.09 11.18L15.09 17L10 14.27L4.91 17L5.91 11.18L1.82 7.27L7.61 6.36L10 1Z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1L12.39 6.36L18.18 7.27L14.09 11.18L15.09 17L10 14.27L4.91 17L5.91 11.18L1.82 7.27L7.61 6.36L10 1Z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1L12.39 6.36L18.18 7.27L14.09 11.18L15.09 17L10 14.27L4.91 17L5.91 11.18L1.82 7.27L7.61 6.36L10 1Z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1L12.39 6.36L18.18 7.27L14.09 11.18L15.09 17L10 14.27L4.91 17L5.91 11.18L1.82 7.27L7.61 6.36L10 1Z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1L12.39 6.36L18.18 7.27L14.09 11.18L15.09 17L10 14.27L4.91 17L5.91 11.18L1.82 7.27L7.61 6.36L10 1Z"/></svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "Worktune.ai nám pomohol zvýšiť produktivitu tímu o 40% za prvé tri mesiace. Dashboardy sú intuitívne a AI odporúčania sú presné."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div class="author-info">
+                            <span class="author-name">Martin Kováč</span>
+                            <span class="author-role">HR Director, TechSolutions s.r.o.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card featured">
+                    <div class="testimonial-stars">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1L12.39 6.36L18.18 7.27L14.09 11.18L15.09 17L10 14.27L4.91 17L5.91 11.18L1.82 7.27L7.61 6.36L10 1Z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1L12.39 6.36L18.18 7.27L14.09 11.18L15.09 17L10 14.27L4.91 17L5.91 11.18L1.82 7.27L7.61 6.36L10 1Z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1L12.39 6.36L18.18 7.27L14.09 11.18L15.09 17L10 14.27L4.91 17L5.91 11.18L1.82 7.27L7.61 6.36L10 1Z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1L12.39 6.36L18.18 7.27L14.09 11.18L15.09 17L10 14.27L4.91 17L5.91 11.18L1.82 7.27L7.61 6.36L10 1Z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1L12.39 6.36L18.18 7.27L14.09 11.18L15.09 17L10 14.27L4.91 17L5.91 11.18L1.82 7.27L7.61 6.36L10 1Z"/></svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "Konečne máme prehľad o tom, kde sa stráca čas. Integrácia s našimi existujúcimi nástrojmi bola bezproblémová a support tím je výborný."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EH</div>
+                        <div class="author-info">
+                            <span class="author-name">Eva Horváthová</span>
+                            <span class="author-role">CEO, Innovate Digital</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1L12.39 6.36L18.18 7.27L14.09 11.18L15.09 17L10 14.27L4.91 17L5.91 11.18L1.82 7.27L7.61 6.36L10 1Z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1L12.39 6.36L18.18 7.27L14.09 11.18L15.09 17L10 14.27L4.91 17L5.91 11.18L1.82 7.27L7.61 6.36L10 1Z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1L12.39 6.36L18.18 7.27L14.09 11.18L15.09 17L10 14.27L4.91 17L5.91 11.18L1.82 7.27L7.61 6.36L10 1Z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1L12.39 6.36L18.18 7.27L14.09 11.18L15.09 17L10 14.27L4.91 17L5.91 11.18L1.82 7.27L7.61 6.36L10 1Z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1L12.39 6.36L18.18 7.27L14.09 11.18L15.09 17L10 14.27L4.91 17L5.91 11.18L1.82 7.27L7.61 6.36L10 1Z"/></svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "ROI bol viditeľný už po prvom mesiaci. Worktune.ai je must-have pre každú firmu, ktorá chce efektívne riadiť remote tímy."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PN</div>
+                        <div class="author-info">
+                            <span class="author-name">Peter Novák</span>
+                            <span class="author-role">Operations Manager, CloudFirst</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Cenník</span>
+                <h2 class="section-title">Transparentné <span class="gradient-text">ceny</span></h2>
+                <p class="section-description">
+                    Vyberte si plán, ktorý najlepšie vyhovuje veľkosti vášho tímu
+                </p>
+            </div>
+            <div class="pricing-toggle">
+                <span class="toggle-label active">Mesačne</span>
+                <button class="toggle-switch" aria-label="Prepnúť na ročnú fakturáciu">
+                    <span class="toggle-slider"></span>
+                </button>
+                <span class="toggle-label">Ročne <span class="save-badge">-20%</span></span>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Starter</h3>
+                        <p class="pricing-description">Pre malé tímy začínajúce s meraním produktivity</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-currency">€</span>
+                        <span class="price-amount">49</span>
+                        <span class="price-period">/ používateľ / mesiac</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Do 10 používateľov
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Základné dashboardy
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Týždenné reporty
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Email podpora
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-block">Vybrať plán</a>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Najpopulárnejší</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Professional</h3>
+                        <p class="pricing-description">Pre rastúce firmy s pokročilými potrebami</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-currency">€</span>
+                        <span class="price-amount">89</span>
+                        <span class="price-period">/ používateľ / mesiac</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Do 50 používateľov
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Pokročilé dashboardy
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            AI odporúčania
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Integrácie (Slack, Teams)
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Prioritná podpora
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-block">Vybrať plán</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Enterprise</h3>
+                        <p class="pricing-description">Pre veľké organizácie s vlastnými požiadavkami</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">Na mieru</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Neobmedzený počet používateľov
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Vlastné dashboardy
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            API prístup
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            On-premise možnosť
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Dedikovaný account manager
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-block">Kontaktujte nás</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2 class="cta-title">Pripravení zvýšiť produktivitu vášho tímu?</h2>
+                    <p class="cta-description">
+                        Začnite s 14-dňovou bezplatnou skúšobnou verziou. Žiadna kreditná karta nie je potrebná.
+                    </p>
+                    <div class="cta-actions">
+                        <a href="#" class="btn btn-white btn-large">
+                            Začať zadarmo
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="btn btn-ghost-white btn-large">Naplánovať demo</a>
+                    </div>
+                </div>
+                <div class="cta-decoration">
+                    <div class="decoration-circle"></div>
+                    <div class="decoration-circle"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="10" fill="url(#gradient-footer)"/>
+                            <path d="M12 20L17 25L28 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="gradient-footer" x1="0" y1="0" x2="40" y2="40">
+                                    <stop stop-color="#6366F1"/>
+                                    <stop offset="1" stop-color="#8B5CF6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>Worktune.ai</span>
+                    </a>
+                    <p class="footer-description">
+                        Inteligentné riešenie pre meranie a optimalizáciu produktivity zamestnancov pomocou AI.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Produkt</h4>
+                    <ul>
+                        <li><a href="#">Funkcie</a></li>
+                        <li><a href="#">Cenník</a></li>
+                        <li><a href="#">Integrácie</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Spoločnosť</h4>
+                    <ul>
+                        <li><a href="#">O nás</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Kariéra</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Podpora</h4>
+                    <ul>
+                        <li><a href="#">Dokumentácia</a></li>
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Právne</h4>
+                    <ul>
+                        <li><a href="#">Podmienky</a></li>
+                        <li><a href="#">Súkromie</a></li>
+                        <li><a href="#">GDPR</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Worktune.ai. Všetky práva vyhradené.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
